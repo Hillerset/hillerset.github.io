@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; media-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; media-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hillerset - cyberbezpieczeństwo, ochrona danych, RODO i NIS2</title>
@@ -62,11 +62,11 @@
   <a class="btn red" href="mailto:biuro@hillersystem.pl?subject=SODA%20-%20pokaz%20programu">Umów pokaz programu</a>
   </div>
   <figure class="film">
-   <video controls preload="none" playsinline poster="soda-film-poster.jpg" aria-label="Film o programie SODA">
+   <video id="film" controls muted preload="metadata" playsinline poster="soda-film-poster.jpg" aria-label="Film o programie SODA">
     <source src="soda-film_web.mp4" type="video/mp4">
     Twoja przeglądarka nie odtwarza filmu. <a href="soda-film_web.mp4">Pobierz film (MP4)</a>.
    </video>
-   <figcaption>Film o programie SODA, 4,5 minuty. Kliknij, aby odtworzyć. Ikona w prawym dolnym rogu włącza pełny ekran.</figcaption>
+   <figcaption>SODA w praktyce, 4,5 minuty. Film startuje bez dźwięku, włączysz go w odtwarzaczu.</figcaption>
   </figure>
  </div>
 </section>
@@ -98,5 +98,6 @@
 </section>
 </main>
 <footer><div class="wrap"><span><b>HILLERSET</b> &nbsp; Roland Rafał Hiller</span><span>Ta strona nie używa ciasteczek ani skryptów śledzących.</span></div></footer>
+<script src="film.js?v=1"></script>
 </body>
 </html>
