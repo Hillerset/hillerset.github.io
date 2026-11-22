@@ -41,7 +41,13 @@ h2+p.sub{color:var(--grey);margin:0 0 40px;max-width:60ch;font-size:17px}
 .soda ul{margin:0 0 30px;padding:0;list-style:none;display:grid;gap:12px;max-width:640px}
 .soda li{padding-left:26px;position:relative;color:#e6e6e8}
 .soda li:before{content:"";position:absolute;left:0;top:.7em;width:14px;height:3px;background:var(--red)}
+.soda-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center}
+.film{margin:0}
+.film video{display:block;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;box-shadow:0 0 0 1px #2a2a2c,0 20px 50px rgba(0,0,0,.5)}
+.film figcaption{margin-top:12px;font-size:13px;line-height:1.5;color:#9a9aa0}
+.film a{color:#fff}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+@media(max-width:900px){.soda-grid{grid-template-columns:1fr;gap:36px}}
 @media(max-width:760px){.two{grid-template-columns:1fr;gap:28px}section{padding:56px 0}}
 .about p{color:#333;font-size:17px;margin:0 0 16px}
 .dl{margin:0;display:grid;gap:18px}
