@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://hillerset.github.io/">
 <link rel="canonical" href="https://hillerset.github.io/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 <header class="hero">
@@ -61,11 +61,12 @@
   </ul>
   <a class="btn red" href="mailto:biuro@hillersystem.pl?subject=SODA%20-%20pokaz%20programu">Umów pokaz programu</a>
   </div>
-  <figure class="film">
+  <figure class="film" id="filmbox">
    <video id="film" controls muted preload="metadata" playsinline poster="soda-film-poster.jpg" aria-label="Film o programie SODA">
     <source src="soda-film_web.mp4" type="video/mp4">
     Twoja przeglądarka nie odtwarza filmu. <a href="soda-film_web.mp4">Pobierz film (MP4)</a>.
    </video>
+   <button type="button" class="zoom" id="zoom" aria-label="Powiększ film">Powiększ</button>
    <figcaption>SODA w praktyce, 4,5 minuty. Film startuje bez dźwięku, włączysz go w odtwarzaczu.</figcaption>
   </figure>
  </div>
@@ -98,6 +99,6 @@
 </section>
 </main>
 <footer><div class="wrap"><span><b>HILLERSET</b> &nbsp; Roland Rafał Hiller</span><span>Ta strona nie używa ciasteczek ani skryptów śledzących.</span></div></footer>
-<script src="film.js?v=1"></script>
+<script src="film.js?v=2"></script>
 </body>
 </html>

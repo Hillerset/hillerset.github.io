@@ -19,4 +19,16 @@
     }
   }, { threshold: [0, 0.2, 0.6, 1] }).observe(v);
   v.addEventListener('volumechange', function () { if (!v.muted) v.dataset.unmuted = '1'; });
+  var box = document.getElementById('filmbox'), z = document.getElementById('zoom');
+  if (box && z) {
+    var set = function (on) {
+      box.classList.toggle('big', on);
+      document.body.classList.toggle('noscroll', on);
+      z.textContent = on ? 'Zamknij' : 'Powiększ';
+      z.setAttribute('aria-label', on ? 'Zamknij powiększenie' : 'Powiększ film');
+    };
+    z.addEventListener('click', function () { set(!box.classList.contains('big')); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
+    box.addEventListener('click', function (e) { if (e.target === box) set(false); });
+  }
 })();
