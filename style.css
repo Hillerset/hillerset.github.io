@@ -70,3 +70,16 @@ body.noscroll{overflow:hidden}
 
 .role{text-wrap:balance}
 .role strong{color:#111;font-weight:600}
+
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;grid-template-rows:auto auto 1fr;column-gap:56px;align-items:start}
+.about-grid h2{grid-column:2;grid-row:1;margin:0 0 10px}
+.about-grid .role{grid-column:2;grid-row:2;margin:0 0 28px!important}
+.about-grid .about-text{grid-column:2;grid-row:3}
+.about-photo{grid-column:1;grid-row:1/4;position:relative;align-self:stretch;min-height:420px}
+.about .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 55%;border-radius:14px;border-bottom:5px solid var(--red)}
+.about-text p{font-size:17px;line-height:1.72}
+.about-text p:last-child{margin-bottom:0}
+.role span{display:block;white-space:nowrap}
+@media(max-width:1100px) and (min-width:761px){.about-grid{grid-template-columns:.9fr 1.1fr;column-gap:40px}}
+@media(max-width:760px){.about-grid{grid-template-columns:1fr;grid-template-rows:none}.about-grid h2,.about-grid .role,.about-grid .about-text,.about-photo{grid-column:1;grid-row:auto}.about-photo{order:3;min-height:0;aspect-ratio:4/5;margin:28px 0}.about-grid h2{order:1}.about-grid .role{order:2;margin:0!important}.about-grid .about-text{order:4}.about-text p{font-size:17px;line-height:1.7}}
+@media(max-width:360px){.role span{font-size:15px}}
