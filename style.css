@@ -84,4 +84,6 @@ body.noscroll{overflow:hidden}
 @media(max-width:760px){.about-grid{grid-template-columns:1fr;grid-template-rows:none}.about-grid h2,.about-grid .role,.about-grid .about-text,.about-photo{grid-column:1;grid-row:auto}.about-photo{order:3;min-height:0;aspect-ratio:4/5;margin:28px 0}.about-grid h2{order:1}.about-grid .role{order:2;margin:0!important}.about-grid .about-text{order:4}.about-text p{font-size:17px;line-height:1.7}}
 @media(max-width:360px){.role span{font-size:15px}}
 
-.about-text p,.lead,.card p,.sub{text-wrap:pretty}
+.about-text p{text-wrap:pretty}
+
+@media(max-width:1100px){.lead br.d{display:none}}
